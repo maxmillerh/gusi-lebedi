@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guse Lebede</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
+   
+</head>
+<body>
+    
+<div id="wrapper">
+    <center><span id="displayText">Тыкнуто 0 из 1000</span></center>
+    <img id="fotoGus" src="img/gus.png" alt="гусь">
+</div>
+
+<script>
+    let ogr = confirm("Вам есть 18 лет?");
+   
+    var count = 0;
+    var btn = document.getElementById("fotoGus");
+    var disp = document.getElementById("displayText");
+
+    btn.onclick = function () {
+        count++;
+        disp.innerHTML = 'Тыкнуто ' + count + ' из 1000';
+        if(count >= 1000){
+       btn.src = 'img/gus1.png' 
+    }
+    };
+
+    
+   
+   
+    
+
+</script>
+</body>
+</html>
