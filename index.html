@@ -1,41 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guse Lebede</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" >
-   
+    <link rel="icon" href="img/logo.png" type="image/x-icon"  >
+    
 </head>
 <body>
-    
+
+<header>
+    <a href="index.html"><img id="logo" src="img/logo.png" alt="Логотип"></a>
+    <div id="moneyBlock" ><span id="money">Денег: 0</span></div>
+    <img id="avtor" src="img/avtor.png" alt="Авторизация">
+    <div class="dropdown">
+        <img onclick="myFunction()" id="shop" src="img/shop.png" alt="Магази" class="dropbtn">
+        <div id="myDropdown" class="dropdown-content">
+            <div onclick="kulackFunction()" class="menu">
+                <img src="img/kulack.png" alt="Кулак">
+              <span>Кулак</span> 
+            </div>
+            <div onclick="bitaFunction()" class="menu">
+                <img src="img/bita.png" alt="Бита">
+                <span>Бита</span>
+            </div>
+            <div onclick="lomFunction()" class="menu">
+                <img src="img/lom.png" alt="">
+                <span>Арматура</span>
+            </div>
+            <div onclick="nojFunction()" class="menu">
+                <img src="img/noj.png" alt="">
+                <span>Нож</span>
+            </div>
+            <div onclick="ganFunction()" class="menu">
+                <img src="img/gan.png" alt="">
+                <span>Пистолет</span>
+            </div>
+        </div>
+      </div>
+</header>
+
 <div id="wrapper">
-    <center><span id="displayText">Тыкнуто 0 из 1000</span></center>
+    <center><span id="displayText">Здоровье 20 из 20</span></center>
     <img id="fotoGus" src="img/gus.png" alt="гусь">
+    <center><span id="textBoss"> </span></center>
 </div>
 
-<script>
-    let ogr = confirm("Вам есть 18 лет?");
-   
-    var count = 0;
-    var btn = document.getElementById("fotoGus");
-    var disp = document.getElementById("displayText");
 
-    btn.onclick = function () {
-        count++;
-        disp.innerHTML = 'Тыкнуто ' + count + ' из 1000';
-        if(count >= 1000){
-       btn.src = 'img/gus1.png' 
-    }
-    };
+<footer>
+    <span id="copy">© 2022 Guse Lebede</span>
+    <div id="iconBlock">
+        <a href="https://twitter.com/Maxmillerzdecsi" target="_blank"><img src="img/twitter.png" alt="Твиттер"></a>
+        <a href="https://web.telegram.org/k/" target="_blank"><img src="img/telegram.png" alt="Телеграм"></a>
+        <a href="https://vk.com/maxmillerr" target="_blank"><img src="img/vk.png" alt="Вконтакте"></a>
+    </div>
+</footer>
 
-    
-   
-   
-    
 
-</script>
+<script src="app.js"></script>
 </body>
 </html>
