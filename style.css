@@ -274,6 +274,11 @@ margin-left: 15px;
         margin-top: 7%;
         }
 }
+@media (max-width: 500px){
+    center{
+        margin-top: 2%;
+    }
+}
 
 
 #urov{

@@ -1,6 +1,6 @@
 var iz = 50;
 var monschet = 0;
-var sec = 40;
+var sec = 30;
 let bayBita = false;
 let bayLom = false;
 let bayNoj = false;
@@ -168,7 +168,7 @@ foto.onclick = function () {
 } else if(count <= 0 && lvl == 5){
         foto.src = 'img/boss2.png';
         tebos.innerHTML = 'БОСС!!';
-        sec = 40;
+        sec = 30;
         ti = setInterval("timer()", 1000);
        
         count = 1000;
